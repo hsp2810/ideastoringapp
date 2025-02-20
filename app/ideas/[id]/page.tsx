@@ -3,16 +3,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { IdeaHeader } from "@/components/idea/IdeaHeader";
 import { IdeaBreakdown } from "@/components/idea/IdeaBreakdown";
 import { IdeaFeatures } from "@/components/idea/IdeaFeatures";
 import { IdeaBusinessModel } from "@/components/idea/IdeaBusiness";
-// import { IdeaCompetition } from "@/components/idea/competition";
-// import { IdeaCollaboration } from "@/components/idea/collaboration";
-// import { IdeaAttachments } from "@/components/idea/attachments";
-// import { IdeaExecutionPlan } from "@/components/idea/execution-plan";
 import { idea } from "@/data";
 
 export default function IdeaPage() {
@@ -55,22 +50,6 @@ export default function IdeaPage() {
           <TabsContent value='business'>
             <IdeaBusinessModel />
           </TabsContent>
-
-          {/* <TabsContent value='competition'>
-            <IdeaCompetition competitors={idea.competition} />
-          </TabsContent>
-
-          <TabsContent value='collaboration'>
-            <IdeaCollaboration ideaId={idea.id} />
-          </TabsContent>
-
-          <TabsContent value='attachments'>
-            <IdeaAttachments attachments={idea.attachments} />
-          </TabsContent>
-
-          <TabsContent value='execution'>
-            <IdeaExecutionPlan />
-          </TabsContent> */}
 
           <TabsContent value='ai-insights'>
             <Card className='p-6'>

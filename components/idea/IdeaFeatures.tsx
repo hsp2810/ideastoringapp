@@ -19,7 +19,7 @@ interface IdeaFeaturesProps {
 
 export function IdeaFeatures({ features }: IdeaFeaturesProps) {
   const onDragEnd = (result: DropResult) => {
-    // Handle drag and drop logic here
+    console.log(result);
   };
 
   return (
